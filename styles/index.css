@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Import Restylane-style Google Fonts alternative ── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Cormorant Garamond", "Georgia", serif;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+  }
+
+  h5, h6 {
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  p {
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.75;
+  }
+}
+
+@layer components {
+  input[type="checkbox"]:checked ~ label span svg { @apply inline-flex; }
+  .sticky .header-logo { @apply py-5 lg:py-2; }
+  .sticky .menu-scroll.active { @apply opacity-70; }
+  input#togglePlan:checked ~ .dot { @apply translate-x-full; }
+  input#checkboxLabel:checked ~ .box span { @apply opacity-100; }
+
+  /* Restylane-style nav links */
+  .nav-link-restylane {
+    font-family: "Jost", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    position: relative;
+  }
+  .nav-link-restylane::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #1a1a1a;
+    transition: width 0.3s ease;
+  }
+  .nav-link-restylane:hover::after { width: 100%; }
+
+  /* Restylane section title */
+  .restylane-title {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: #1a1a1a;
+  }
+
+  /* Restylane label */
+  .restylane-label {
+    font-family: "Jost", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #888;
+  }
+
+  /* Swiper nav hide default */
+  .featured-swiper-simple .swiper-button-next,
+  .featured-swiper-simple .swiper-button-prev {
+    color: #1a1a1a;
+    background: white;
+    border: 1px solid #e0e0e0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+  .featured-swiper-simple .swiper-button-next::after,
+  .featured-swiper-simple .swiper-button-prev::after {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}

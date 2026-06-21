@@ -1,0 +1,57 @@
+import { getImagePath } from "@/lib/utils";
+import { Featured } from "@/types/featured";
+
+export const getFeaturedData = (): Featured[] => [
+  // ── Restylane: Kysse first, then Skinbooster, then rest ──────
+  { id: 103, category: "Restylane", name: "Restylane Kysse",                productId: "restylane-kysse",                productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/HA Fillers/Restylane/3.png") },
+  { id: 106, category: "Restylane", name: "Restylane Skinbooster Vital",    productId: "restylane-skinbooster-vital",    productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/HA Fillers/Restylane/6.png") },
+  { id: 107, category: "Restylane", name: "Restylane Skinbooster Vital Light", productId: "restylane-skinbooster-vital-light", productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/HA Fillers/Restylane/5.png") },
+  { id: 101, category: "Restylane", name: "Restylane Classyc",              productId: "restylane-classyc",              productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/HA Fillers/Restylane/1.png") },
+  { id: 102, category: "Restylane", name: "Restylane Defyne",               productId: "restylane-defyne",               productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/HA Fillers/Restylane/2.png") },
+  { id: 104, category: "Restylane", name: "Restylane Lyft",                 productId: "restylane-lyft",                 productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/HA Fillers/Restylane/4.png") },
+  { id: 105, category: "Restylane", name: "Restylane Volyme",               productId: "restylane-volyme",               productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/HA Fillers/Restylane/4.png") },
+
+  // ── Aesthetics: PDRN first, Pure second, Motiva third, Exohealer fourth, then rest ──
+  { id: 209, category: "Aesthetics", name: "Preime PDRN Booster",           productId: "preime-pdrn-booster",           productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Aesthetic/Preime/Human Exosome/1.png") },
+  { id: 206, category: "Aesthetics", name: "Preime Pure",                   productId: "preime-pure",                   productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Aesthetic/Preime/Human Exosome/3.png") },
+  { id: 213, category: "Aesthetics", name: "Mia Femtech™",                  productId: "mia-femtech",                   productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Mia/listing.jpg") },
+  { id: 214, category: "Aesthetics", name: "ŎNAD",                          productId: "onad",                          productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Eternavia/1.jpg") },
+  { id: 201, category: "Aesthetics", name: "Exohealer HB Plus",             productId: "exohealer-hb-plus",             productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Aesthetic/Exohealer/HB Plus/1.png") },
+  { id: 207, category: "Aesthetics", name: "Preime Pure Bright",            productId: "preime-pure-bright",            productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Aesthetic/Preime/Human Exosome/2.png") },
+  { id: 208, category: "Aesthetics", name: "Preime Renew",                  productId: "preime-renew",                  productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Aesthetic/Preime/Human Exosome/4.png") },
+  { id: 210, category: "Aesthetics", name: "Preime HA 3.5",                 productId: "preime-ha-3.5",                 productCategory: "aesthetic", image: getImagePath("/images/featured/aesthetics/5.png") },
+  { id: 211, category: "Aesthetics", name: "Preime Skin Lift",              productId: "preime-skin-lift",              productCategory: "aesthetic", image: getImagePath("/images/featured/aesthetics/4.png") },
+  { id: 212, category: "Aesthetics", name: "Preime Skin Renew",             productId: "preime-skin-renew",             productCategory: "aesthetic", image: getImagePath("/images/featured/aesthetics/6.png") },
+  { id: 202, category: "Aesthetics", name: "Exohealer SB Plus",             productId: "exohealer-sb-plus",             productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Aesthetic/Exohealer/SB Plus/1.png") },
+  { id: 204, category: "Aesthetics", name: "Miracu Lifting Threads",        productId: "miracu",                        productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Aesthetic/Miracu/1.png") },
+  { id: 205, category: "Aesthetics", name: "New Melan Pro",                 productId: "new-melan-pro",                 productCategory: "aesthetic", image: getImagePath("/images/products/Aesthetic/Aesthetic/New Melan/3.png") },
+
+  // ── Machines: Forza first, then rest ─────────────────────────
+  { id: 306, category: "Machines", name: "Forza Laser",                    productId: "forza",                         productCategory: "machines",  image: getImagePath("/images/products/Machines/Aesthetic/Forza/1.png") },
+  { id: 301, category: "Machines", name: "Bison Dual Accento",             productId: "bison-dual-accento",            productCategory: "machines",  image: getImagePath("/images/products/Machines/Laser/Bison Dual Accento/1.png") },
+  { id: 302, category: "Machines", name: "Bison Lucid Q-PTP",              productId: "bison-lucid-q-ptp",             productCategory: "machines",  image: getImagePath("/images/products/Machines/Laser/Bison Lucid Q-PTP/1.png") },
+  { id: 303, category: "Machines", name: "PicoCare 250",                   productId: "picocare-250",                  productCategory: "machines",  image: getImagePath("/images/products/Machines/Laser/Picocare 250/1.png") },
+  { id: 304, category: "Machines", name: "PicoCare 450",                   productId: "picocare-450",                  productCategory: "machines",  image: getImagePath("/images/products/Machines/Laser/Picocare 450/1.png") },
+  { id: 305, category: "Machines", name: "Primelase HR",                   productId: "primelase-hr",                  productCategory: "machines",  image: getImagePath("/images/products/Machines/Laser/Primelase HR/1.png") },
+  { id: 307, category: "Machines", name: "PAL Microaire",                  productId: "pal-microaire",                 productCategory: "machines",  image: getImagePath("/images/products/Machines/Aesthetic/PAL microaire/1.png") },
+  { id: 308, category: "Machines", name: "Smart Sonic",                    productId: "smart-sonic",                   productCategory: "machines",  image: getImagePath("/images/products/Machines/Aesthetic/Smart Sonic/1.png") },
+  { id: 309, category: "Machines", name: "Venus Viva",                     productId: "venus-viva",                    productCategory: "machines",  image: getImagePath("/images/products/Machines/Aesthetic/Venus Viva/1.png") },
+  { id: 310, category: "Machines", name: "HydraCool",                      productId: "hydracool",                     productCategory: "machines",  image: getImagePath("/images/products/Machines/Facial/HydraCool/1.png") },
+  { id: 311, category: "Machines", name: "HydraCool Plus",                 productId: "hydracool-plus",                productCategory: "machines",  image: getImagePath("/images/products/Machines/Facial/HydraCoolPlus/1.png") },
+  { id: 312, category: "Machines", name: "Minivac",                        productId: "minivac",                       productCategory: "machines",  image: getImagePath("/images/products/Machines/Facial/Minivac/1.png") },
+  { id: 313, category: "Machines", name: "O2toDerm",                       productId: "o2toderm",                      productCategory: "machines",  image: getImagePath("/images/products/Machines/Facial/O2toDerm/1.png") },
+  { id: 314, category: "Machines", name: "Preime Facial Device",           productId: "preime-facial",                 productCategory: "machines",  image: getImagePath("/images/products/Machines/Facial/Preime/1.png") },
+  { id: 315, category: "Machines", name: "TargetCool Ice Needling",        productId: "targetcool",                    productCategory: "machines",  image: getImagePath("/images/products/Machines/Facial/TargetCool/1.png") },
+  { id: 316, category: "Machines", name: "Cooltech",                       productId: "cooltech",                      productCategory: "machines",  image: getImagePath("/images/products/Machines/Slimming/Cooltech/1.png") },
+  { id: 317, category: "Machines", name: "Cooltech Define",                productId: "cooltech-define",               productCategory: "machines",  image: getImagePath("/images/products/Machines/Slimming/Cooltech Define/1.png") },
+  { id: 318, category: "Machines", name: "Venus Legacy",                   productId: "venus-legacy",                  productCategory: "machines",  image: getImagePath("/images/products/Machines/Slimming/Venus Legacy/1.png") },
+  { id: 319, category: "Machines", name: "Aurora X2",                      productId: "aurora-x2",                     productCategory: "machines",  image: getImagePath("/images/products/Machines/Support/Aurora X2/1.png") },
+  { id: 320, category: "Machines", name: "VISBODY S30",                    productId: "visbody",                       productCategory: "machines",  image: getImagePath("/images/products/Machines/Support/Visbody/1.png") },
+  { id: 326, category: "Machines", name: "MCT Technology",                  productId: "mct-technology",               productCategory: "machines",  image: getImagePath("/images/products/Machines/Aesthetic/MCT Technology/1.png") },
+  { id: 327, category: "Machines", name: "Emsculpt",                        productId: "emsculpt",                     productCategory: "machines",  image: getImagePath("/images/products/Machines/Aesthetic/Emsculpt/1.png") },
+  { id: 321, category: "Machines", name: "Exomind",                        productId: "exomind",                       productCategory: "machines",  image: getImagePath("/images/products/Machines/Aesthetic/Exomind/1.png") },
+  { id: 322, category: "Machines", name: "Emsella",                        productId: "emsella",                       productCategory: "machines",  image: getImagePath("/images/products/Machines/Aesthetic/Emsella/1.png") },
+  { id: 323, category: "Machines", name: "Ultherapy Prime",                productId: "ultherapy-prime",               productCategory: "machines",  image: getImagePath("/images/products/Machines/Facial/Ultherapy/1.png") },
+  { id: 324, category: "Machines", name: "Arosha",                         productId: "arosha",                        productCategory: "machines",  image: getImagePath("/images/products/Machines/Slimming/Arosha/1.png") },
+  { id: 325, category: "Machines", name: "Exilis Ultra 360",               productId: "exilis-ultra-360",              productCategory: "machines",  image: getImagePath("/images/products/Machines/Slimming/Exilis/1.png") },
+];
